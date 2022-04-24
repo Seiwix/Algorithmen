@@ -6,7 +6,7 @@ public class LinkedList<T> implements ListInterface<T> {
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<String>();
         list.insert("test");
-        list.insert( 1 ,"hallo");
+        list.insert( 1 ,"hello");
         list.insert( 0 ,"car");
         list.insert( 2 ,"pc");
         list.print();
