@@ -2,17 +2,16 @@ package LinkedList;
 
 import java.util.function.Function;
 
-public class LinkedList<T> implements  ListInterface<T>{
+public class LinkedList<T> implements ListInterface<T> {
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<String>();
         list.insert("test");
         list.insert( 1 ,"hallo");
         list.insert( 0 ,"car");
         list.insert( 2 ,"pc");
-
+        list.print();
         System.out.println("====> find<====");
         System.out.println(list.find(e->e.startsWith("h")));
-        list.print();
         System.out.println("====> delete<====");
          list.delete(e->e.contentEquals("test"));
          list.print();
